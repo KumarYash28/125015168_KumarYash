@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: Arial, sans-serif;
+  background-color:skyblue;
+  background: url("./images//Punt.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.controls {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.app {
+  max-width: 800px;
+  margin: 2% auto;
+  padding: 30px;
+  height: 500px;
+  width: 1000px;
+  background-color: rgba(253, 253, 253, 0.6);
+  border: 4px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.control-group {
+  margin-bottom: 10px;
 }
+
+.control-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.control-group select,
+.control-group input[type="checkbox"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 75px;
+}
+
+.text-editor {
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: right;
+  
+  margin-top: 20px;
+}
+
+.text-editor textarea {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+
+.buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+  margin:0% 30px;
+}
+
+.buttons button:hover {
+  background-color: #3e8e41;
+}
+
+
+.buttons button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
